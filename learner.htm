@@ -52,9 +52,9 @@
     }
     @keyframes slide { 
       0%{
-        background-image: url(bac.jpg);
+        background-image: url(rophina.jpg);
       }
-       33%{
+       40%{
         background-image: url(rophina.jpg);
       } 
       67%{
@@ -65,18 +65,25 @@
     
     
     .top{
-      width:100%;
+       width:100%;
       height: 100%;
       margin: 3em;
-      overflow: hidden;
+      
       position: relative;
       background-image: url(bac.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      animation:slide 9s  infinite;
+      animation:slide 9s  3;
 
     }
-   
+   ol{
+     list-style: none;
+     align-self: center;
+     text-indent: 3em;
+   }
+   img{
+     
+   }
     
 
     </style>
@@ -105,14 +112,15 @@
    I weight <span class="weight">150</span> lbs.
    I come from Kenya. I am learning html  and javascript. 
   I don't know the future but who cares. </P>
-<div class="animation">
+<div class="top">
 <img src="bac.jpg" class="revealimg">
 </div>  
-<ul>
-  <li>item</li>
-  <li>items</li>
+<ol class="query" >
+  <li class="orders">item</li>
+  <li class="orders">items</li>
+  <li class="orders">itemsi</li>
 
-</ul>
+</ol>
     <h3 class="story"> Completed</h3>
 
     <script>
@@ -173,6 +181,13 @@ ethan.innerText='welcome';
 console.log(ethan);
 console.log(ethan.value);
 }
+
+var orders=document.querySelector('.orders:last-child');
+  console.log(orders.innerHTML);  
+orders.style.backgroundColor='red';
+
+
+
     </script>
 
 
