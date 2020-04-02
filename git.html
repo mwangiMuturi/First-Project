@@ -1,14 +1,17 @@
 <html>
 	<head>
 		<title> hELLO WORLD </title>
-		<link rel="stylesheet" type="text/css" href="me.css"/>
+		<link rel="stylesheet" type="text/css" href="me.cs"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+		<style></style>
 	</head>
 	   <body>
+		
 	   	<div class="container">
 	   	<div class="box-1">
       		<h2>Hello World!Goo!</h2>
 
-      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      	<p class="text-justify "  >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -26,29 +29,30 @@ Wow. You really should not do that.</p>
 <img src="bac.jpg" height="400" width="400" />
 </a>
 
-<p/>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+<p class="text-justify">
+Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud <strong>exercitation ullamco</strong> laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum <a href="file:///C:\Users\Jimmy\Documents\CSS first\test2.html" target="_blank">dolore eu fugiat nulla</a> pariatur. Excepteur sint occaecat cupidatat non
+	cillum <a href="file:///C:\Users\Jimmy\Documents\CSS first\test2.html" target="_blank">dolore
+		 eu fugiat nulla</a> pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
 </p>
 
 <form method=post action="/cgibin/example.cgi"> 
 
 
-<input   type="text" style="color:#ffffff; font-family: Verdana; 
-font-weight: bold; font-size: 12px; background-color: #72a4d2;"
- size="11" maxlength="33"> 
+<input   type="text" > 
 
-<input class="button" type="Submit" value="Submit"/> </form> 
+<input class=" btn-warning btn" type="Submit" value="Submit" /> </form> 
 <hr/>
+<input type="file" class="btn-success btn "> </>
 
 
 	<div>
 
-<ul class="categories">
+		
+<ul class="ul">
 	<li>Kimoda a</li>
 	<li>Kimoda b</li>
 	<li>Kimoda c</li>
@@ -58,8 +62,8 @@ font-weight: bold; font-size: 12px; background-color: #72a4d2;"
 
 </div>
 <hr/>
-<div class="table">
-<table>
+<div class="table  ">
+<table class="table border">
 	<thead>
 		<tr>
 			<th>Name</th>
@@ -88,38 +92,38 @@ font-weight: bold; font-size: 12px; background-color: #72a4d2;"
 <hr>
 
 <!--Form-->
-<form action="process.php" method="post">
+<form action="process.php" method="post" class="form-grop">
 
-<div class="form">
-	<div>
-	<label>First Name</label>
-	<input type="text" name="First Name" placeholder="Enter first name">
+<div class="form-group">
+	
+	<label for="InputText">First Name</label>
+	<input type="text" class="form-control" name="First Name" placeholder="Enter first name">
+
+
 </div>
 
-
-
-<div>
+     <div class="form-group">
     <label>Last Name</label>
-	<input type="text" name="lastName" placeholder="Enter Last name">
+	<input type="text" class="form-control" name="lastName" placeholder="Enter Last name">
 </div>
 
 
 
-<div>
-    <label>Email</label>
-	<input type="email" name="email address" placeholder="Enter email">
+<div class="form-group">
+    <label >Email</label>
+	<input type="email"  class="form-control" name="email address" placeholder="Enter email">
 </div>
 
 
 
 
 
-<div >
+<div class="form-group" >
     <label>Message</label>
-	<textarea name="message" > </textarea> 
+	<textarea name="message" class="form-control"> </textarea> 
 </div>
 
-<div >
+<div  class="form-group" >
 
 
     <label>Gender</label>
@@ -133,28 +137,62 @@ font-weight: bold; font-size: 12px; background-color: #72a4d2;"
 
 
 
-<div>
+<div  class="form-group">
     <label>Age:</label>
-	<input type="Number" name="age" value="20">
+	<input type="Number" class="form-control" name="age" value="20">
 </div>
 
 
 <div>
     <label>Birthday:</label>
-	<input type="date" name="Birthday" >
+	<input type="date" class="form-control" name="Birthday" >
 </div>
 <br>
-<input class="button" type="Submit" name="Submit"/>
-</br>
-</form>
+<div  class="form-group">
+<!--<input class="btn btn-primary" type="submit" name="Submit"> Sign In</input>-->
+<input type="checkbox">Check me in</>
+<br>
+<button class="btn btn-success " type="submit">Sign in</button>
 
 </div>
+
+
+<form>
+	<div class="row">
+		<div class="col">
+			<label for="">Name</label>
+			<input type="text" class="form-control" placeholder="First name">
+		</div>
+		<div class="col">
+		<label>lName</label>
+			<input type="text" class="form-control" placeholder="Last name">
+		</div>
+
+		<div class="col">
+			<label>lName</label>
+			<input type="text" class="form-control" placeholder="Last name">
+		</div>
+
+		<div class="col">
+			<label>lName</label>
+			<input type="text" class="form-control" placeholder="Last name">
+		</div>
+
+		<div class="col">
+			<label>lName</label>
+			<input type="text" class="form-control" placeholder="Last name">
+		</div>
+		
+	</div>
+	
+</form>
 <!--Button-->
-<button class="button">Click me</button>
+
+<button class="button btn btn-primary ">Click me</button>
 
 
 
-<blockquote cite="Traversymedia.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+<blockquote class="text-justify" cite="Traversymedia.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -168,6 +206,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockq
 
 </div>
 </div>
+<!--
 <script >
 	alert("I'm in");
 	console.log("This is a desert");
@@ -241,7 +280,7 @@ function Fruit(name,color,shape){
 
 
 </script>
-
+-->
 </body>
 	   
 
