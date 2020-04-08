@@ -27,9 +27,40 @@
       <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
     </ul>
+  
    </div>
   </div>
 
-  <script src="dom.js"></script>
+  <script >
+
+    var learning=document.getElementById('main-header');
+     
+      learning.style.borderBottom= ' solid 3px blue';
+
+      var items=document.getElementsByClassName('list-group-item');
+    console.log(items.parentNode);
+    console.log(items.parentNode);
+
+    var itemsi=document.querySelector('#items')
+    console.log(itemsi.parentNode.parentNode);
+
+
+// adding an element using js. 
+var newDiv =document.createElement('div');
+var newDivText=document.createTextNode('Hello World');
+newDiv.appendChild(newDivText);
+
+var btn=document.createElement('button');
+btn.innerHTML='click';
+btn.className=('btn-dark');
+btn.style.display=('block');
+btn.style.marginTop=('8px');
+newDiv.appendChild(btn);
+
+var h1= document.querySelector('header h1');
+ var container=document.querySelector('  .container');
+container.insertBefore(newDiv,h1);
+newDiv.style.backgroundColor=('#f4f4')
+  </script>
 </body>
-</html>
+</html> 
