@@ -21,35 +21,61 @@
             background-color:rgba(44,62,80,0.7);
             border-radius: 7px;
            padding: 40px;
-            width: 300px;
+           width: 300px;;
             margin: auto;
            
             margin-top: 120px;
             height: 400px;
         }
+        .btn{
+            margin-left: 7vh;
+        }
+        .byn{
+            margin-left: 7vh;
+            margin-top: 3px;
+            border: 0;
+            background-color: rgb(155, 44, 44);
+            width:12vw;
+            border-radius: 5px;
+            padding: 4px;
+            color: floralwhite;
+            font-size: 1.3em;
+        }
     </style>
 </head>
 <body>
-   
-   
-
-
-
-
-    <div class="container">
-
-   
-        <div class="card col-sm-6 ">
+ 
+  
+   <div class="col-sm-12">
+        <div class="card">
             <form>
-                <h5>Mine</h5>
-<button class="btn-success btn">Sign In</button>
+                
+                <label >Username</label>
+                <input type="text" >
+                <label >Password</label>
+                <input type="password">
+                <br/>
+                <br/>
+                <button  type="button" class="btn-success btn " onclick="check()">Sign In</button>
+          <br/>
+          <br>
+           <label for=""> Don't have an account? 
+               <a href="#">Create One</a></label>
+          
+           <br/>
+
             </form>
            
-
+        </div>
             
         </div>
 
-</div>
+<script>
+
+    function check() {
+        console.log('jj');
+    }
+</script>
 
 </body>
 </html>
